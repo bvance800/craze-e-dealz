@@ -122,7 +122,7 @@ function($stateProvider, $urlRouterProvider) {
 
   $urlRouterProvider.otherwise('home');
 }]);
-
+/*
 (function() {
   'use strict';
 
@@ -136,7 +136,7 @@ function($stateProvider, $urlRouterProvider) {
     snackbarContainer.MaterialSnackbar.showSnackbar(data);
   });
 }());
-
+*/
 app.controller('ItemCtrl', [
 	'$scope',
 	'$stateParams',
