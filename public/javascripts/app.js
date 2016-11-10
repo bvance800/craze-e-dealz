@@ -123,6 +123,20 @@ function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('home');
 }]);
 
+(function() {
+  'use strict';
+
+  var snackbarContainer = document.querySelector('#demo-toast-example');
+  var showToastButton = document.querySelector('#demo-show-toast');
+  showToastButton.addEventListener('click', function() {
+    'use strict';
+    var data = {
+      message: 'Item added to your cart.'
+    };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+  });
+}());
+
 app.controller('ItemCtrl', [
 	'$scope',
 	'$stateParams',
@@ -147,3 +161,5 @@ app.controller('CartCtrl', [
 	{
 		$scope.items = cart.cart;
 	}])
+
+
