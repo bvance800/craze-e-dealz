@@ -58,7 +58,7 @@
 				<div class="item-info">
 					<p>Price: ${{currentItem.price}}.00</p>
 					<p>Description: {{currentItem.description}}</p>
-					<p id="addToCart" ng-click="addToCart(currentItem)">Add to Cart</p>
+					<p id="addToCart" class="mdl-button mdl-js-button mdl-button--raised" ng-click="addToCart(currentItem)">Add to Cart</p>
 
 				</div>
 			</div>
@@ -78,6 +78,11 @@
 
 		<script type="text/ng-template" id="/owner.html">
 		</script>
+		
+			<div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+		<div class="mdl-snackbar__text"></div>
+		<button class="mdl-snackbar__action" type="button"></button>
+	</div>
 
 	</body>
 
