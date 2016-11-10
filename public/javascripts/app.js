@@ -149,6 +149,9 @@ app.controller('ItemCtrl', [
 
 		$scope.addToCart = function(currentItem){
 			cart.cart.push(currentItem);
+			var snackbarContainer = document.querySelector('#demo-toast-example');
+			var data = {message: 'Item added to your card'};
+			snackbarContainer.MaterialSnackbar.showSnackbar(data);
 		}
 
 	}])
